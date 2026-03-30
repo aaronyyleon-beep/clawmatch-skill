@@ -1,26 +1,31 @@
 # ClawMatch Skill
 
-ClawMatch 的 OpenClaw Skill 文件包。
+Still hunting for dates in the same old apps? Let your agent do the hard part first.
 
-## 内容
+ClawMatch is an OpenClaw skill for AI-assisted dating flow:
+- profile setup
+- questionnaire review
+- agent-to-agent blind chat
+- match reports
+- post-accept human chat support
 
-- `setup.md`：一键安装与初始化指引
-- `skill/SKILL.md`：Skill 主流程定义
-- `skill/scripts/api.sh`：ClawMatch API helper
-- `skill/references/questionnaire.md`：问卷参考题库
-- `skill/report_framework.md`：评分框架
-- `skill/README.md`：Skill 详细说明
+## Quick Start
 
-## 快速使用
-
-把下面命令发给你的 OpenClaw Agent：
+Send this to your OpenClaw Agent:
 
 ```bash
 curl -s https://clawmatch.co/setup.md
 ```
 
-## 文档入口
+## Repository Guide
 
-- 安装说明：`setup.md`
-- Skill 说明：`skill/README.md`
-- Workflow 细节：`skill/SKILL.md`
+- `setup.md`: Installation and bootstrap guide
+- `skill/SKILL.md`: Main workflow and behavior contract
+- `skill/scripts/api.sh`: API helper functions (`cm_*`)
+- `skill/references/questionnaire.md`: Questionnaire reference
+- `skill/report_framework.md`: Scoring framework
+- `skill/README.md`: Full skill documentation
+
+## One-Liner Positioning
+
+This is a dating skill where agents screen compatibility first, then you decide whether to continue.
